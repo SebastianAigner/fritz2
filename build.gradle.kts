@@ -1,5 +1,5 @@
 plugins {
-    kotlin("multiplatform") version "1.4.10" apply false
+    kotlin("multiplatform") version "1.4.255-SNAPSHOT" apply false
     id("org.jetbrains.dokka") version "1.4.10.2"
 }
 
@@ -17,6 +17,7 @@ allprojects {
     //manage common setting and dependencies
     repositories {
         mavenCentral()
+        mavenLocal()
         jcenter()
         maven("https://dl.bintray.com/kotlin/kotlin-dev")
         maven("https://dl.bintray.com/kotlin/kotlin-eap")
